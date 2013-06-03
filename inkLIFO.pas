@@ -160,21 +160,16 @@ implementation
 //                                                                            //
 //****************************************************************************//
 
+{$MACRO ON} // определяем БАЗОВЫЕ макросы
+{$deFine _M_protoInkLIFO_blockFNK__GetNext:=InkNodeStack_getNext}
+{$deFine _M_protoInkLIFO_blockFNK__SetNext:=InkNodeStack_setNext}
+{$deFine _M_protoInkLIFO_blockFNK__GetDATA:=InkNodeStack_getDATA}
 
 //****************************************************************************//
 //                                                                            //
 //                                                                   ЧАСТЬ #2 //
 //                                                                            //
 //****************************************************************************//
-
-{$MACRO ON}
-{$deFine _M_protoInkLIFO_blockFNK__GetNext:=InkNodeStack_getNext}
-{$deFine _M_protoInkLIFO_blockFNK__SetNext:=InkNodeStack_setNext}
-{$deFine _M_protoInkLIFO_blockFNK__GetDATA:=InkNodeStack_getDATA}
-{.$deFine _M_protoInkLIFO_blockFNK__nodeCRT}
-{.$deFine _M_protoInkLIFO_blockFNK__nodeDST}
-
-//------------------------------------------------------------------------------
 
 {:::[00] ИНИЦИАЛИЗИРОВАТЬ, подготовить к работе.
   @param(Stack указатель на cтек [на первый узел])
