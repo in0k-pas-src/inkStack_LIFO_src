@@ -38,6 +38,7 @@ var tmp:pointer;
 {%endregion}
 begin
     {$ifDef inkLIFO_fncHeadMessage}{$message 'inline -> protoInkLLs_bodyFNC_11__Count'}{$endIF}
+    {$deFine _M_protoInkLLs_11__lcl_getNext:=_fnc_piLifo11_getNext}
     {$deFine _M_protoInkLLs_11__tmp_POINTER:=_tmp_piLifo11_POINTER}
     {$deFine _M_protoInkLLs_11__cst_FIRST  :=_cst_piLifo11_STACK}
     {$deFine _M_protoInkLLs_11__out_COUNT  :=_out_piLifo11_COUNT}
